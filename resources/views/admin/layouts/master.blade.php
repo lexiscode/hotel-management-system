@@ -6,7 +6,7 @@
   <meta name="csrf-token" content="{{ csrf_token() }}" />
 
   <title>Admin Dashboard &mdash; LexJoe</title>
-  <link rel="icon" href="{{ asset('assets/custom/images/signin-logo.png') }}" type="image/png">
+  <link rel="shortcut icon" href={{ asset("assets/custom/images/shortcut.png") }} type="image/png">
 
   <!-- General CSS Files -->
   <link rel="stylesheet" href="{{ asset('admin/assets/modules/bootstrap/css/bootstrap.min.css') }}">
@@ -51,17 +51,27 @@
         <!-- Admin Profile section -->
         @yield('index-profile')
 
-        <!-- Admin Settings section -->
-        @yield('index-admin-settings')
-
         <!-- Blogs section -->
         @yield('index-blogs')
         @yield('create-blogs')
         @yield('show-blog-details')
         @yield('update-blogs')
+        @yield('search-blogs')
 
         <!-- Messages section -->
-        @yield('post_enquiries')
+        @yield('contact_enquiries')
+
+        <!-- Testimonials section -->
+        @yield('index-testimonials')
+        @yield('create-testimonials')
+        @yield('show-testimonial-details')
+        @yield('update-testimonials')
+        @yield('search-testimonials')
+
+        <!-- Newsletter section -->
+        @yield('index-newsletter')
+        @yield('search-newsletter')
+       
 
 
         </div>

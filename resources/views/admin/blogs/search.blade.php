@@ -1,6 +1,6 @@
 @extends('admin.layouts.master')
 
-@section('index-blogs')
+@section('search-blogs')
     <section class="section">
 
         <div class="section-header">
@@ -10,13 +10,8 @@
         <div class="card card-warning">
             <div class="card-header">
                 <h4>Manage Your Blogs Here!</h4>
-                <form class="card-header-form" action="{{ route('admin.blog.search') }}" method="GET">
+                <form class="card-header-form">
                     <div class="input-group">
-                        <input type="text" name="search" class="form-control" placeholder="Search">
-                        <div class="input-group-btn">
-                            <button class="btn btn-primary btn-icon"><i class="fas fa-search"></i></button>
-                        </div>
-
                         <!-- This is the create new blog button -->
                         <div class="card-header-action">
                             <a href="{{ route('admin.blog.create') }}" class="btn btn-primary">Create New Blog Post</a>
@@ -26,29 +21,6 @@
                 </form>
             </div>
             <div class="card-body">
-
-                <!-- Display new blog creation success message if it exists -->
-                @if (session('creation-success'))
-                    <div class="alert alert-success alert-dismissible show fade">
-                        <div class="alert-body">
-                            <button class="close" data-dismiss="alert">
-                                <span>×</span>
-                            </button>
-                            {{ session('creation-success') }}
-                        </div>
-                    </div>
-                @endif
-                <!-- Display updated blog success message if it exists -->
-                @if (session('update-success'))
-                    <div class="alert alert-success alert-dismissible show fade">
-                        <div class="alert-body">
-                            <button class="close" data-dismiss="alert">
-                                <span>×</span>
-                            </button>
-                            {{ session('update-success') }}
-                        </div>
-                    </div>
-                @endif
 
                 <!-- This is a simple table -->
                 <table class="table">
@@ -63,10 +35,10 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @if ($blogs->isEmpty())
+                        @if ($blog_search->isEmpty())
                             <p>No blog found.</p>
                         @else
-                            @foreach ($blogs as $blog)
+                            @foreach ($blog_search as $blog)
                                 <tr>
                                     <td>{{ $blog->title }}</td>
                                     <td>{{ $blog->created_at }}</td>
@@ -93,12 +65,6 @@
                         @endif
                     </tbody>
                 </table>
-
-
-                <!-- Simple pagination links -->
-                <div class="pagination" style="margin: 0 auto; justify-content: center; margin-top: 10px;">
-                    {{ $blogs->links('pagination::simple-bootstrap-4') }}
-                </div>
 
             </div>
         </div>

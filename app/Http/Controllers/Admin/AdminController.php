@@ -15,6 +15,7 @@ class AdminController extends Controller
         return view('web.frontend.admin-login.index');
     }
 
+
     public function login(Request $request)
     {
         if(Auth::guard('admin')->attempt(['email' => $request->email, 'password' => $request->password])){
@@ -24,10 +25,6 @@ class AdminController extends Controller
         }
     }
 
-    public function dashboard()
-    {
-        return view('admin.dashboard.index');
-    }
 
     public function logout(Request $request)
     {

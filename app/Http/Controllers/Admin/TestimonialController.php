@@ -3,24 +3,24 @@
 namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 
-use App\Models\Blog;
+use App\Models\Testimonial;
 use App\Models\ContactEnquiry;
 
 use Illuminate\Http\Request;
 
 
-class BlogController extends Controller
+class TestimonialController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $blogs = Blog::orderBy('created_at', 'desc')->simplePaginate(5);
+        $testimonials = Testimonial::orderBy('created_at', 'desc')->simplePaginate(5);
 
         $contact_enquiries = ContactEnquiry::orderBy('created_at', 'desc')->simplePaginate(5);
 
-        return view('admin.blogs.index', compact('blogs', 'contact_enquiries'));
+        return view('admin.testimonials.index', compact('testimonials', 'contact_enquiries'));
     }
 
     /**
@@ -30,7 +30,7 @@ class BlogController extends Controller
     {
         $contact_enquiries = ContactEnquiry::orderBy('created_at', 'desc')->simplePaginate(5);
 
-        return view('admin.blogs.create', compact('contact_enquiries'));
+        return view('admin.testimonials.create', compact('contact_enquiries'));
     }
 
     /**
@@ -41,32 +41,32 @@ class BlogController extends Controller
         //dd($request->all());
         // Validation rules for the form fields
         $validatedData = $request->validate([
-            'title' => ['required', 'string', 'max:255', 'unique:blogs,title'],
+            'name' => ['required', 'string', 'max:255', 'unique:testimonials,title'],
+            'title' => ['required', 'string', 'max:255'],
             'image' => ['required', 'image', 'mimes:jpeg,png,jpg,gif', 'max:2048'],
-            'content' => ['required', 'string'],
-            'featured' => ['nullable', 'string'],
+            'message' => ['required', 'string'],
         ]);
 
         // Handle image upload
         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $imageName = time() . '_' . $image->getClientOriginalName();
-            $imagePath = 'uploads/blogs/' . $imageName;
+            $imagePath = 'uploads/testimonials/' . $imageName;
 
             // Move the uploaded image to the public directory
-            $image->move(public_path('uploads/blogs'), $imageName);
+            $image->move(public_path('uploads/testimonials'), $imageName);
 
             // Save the image name to the database
-            $validatedData['image'] = $imagePath;
+            $validatedData['image'] = $imageName;
         }
 
         // Add checkbox values to $validatedData (1 or 0)
         $validatedData['featured'] = $request->has('featured');
 
         // Create a new blog using the validated data
-        Blog::create($validatedData);
+        Testimonial::create($validatedData);
 
-        return redirect()->route('admin.blog.index')->with('creation-success', 'Blog created successfully');
+        return redirect()->route('admin.testimonials.index')->with('creation-success', 'Testimonial created successfully');
     }
 
     /**
@@ -74,11 +74,11 @@ class BlogController extends Controller
      */
     public function show(string $id)
     {
-        $blog = Blog::findOrFail($id);
+        $testimonial = Testimonial::findOrFail($id);
 
         $contact_enquiries = ContactEnquiry::orderBy('created_at', 'desc')->simplePaginate(5);
 
-        return view('admin.blogs.show', compact('blog', 'contact_enquiries'));
+        return view('admin.blogs.show', compact('testimonial', 'contact_enquiries'));
     }
 
     /**
@@ -86,11 +86,11 @@ class BlogController extends Controller
      */
     public function edit(string $id)
     {
-        $blog = Blog::findOrFail($id);
+        $testimonial = Testimonial::findOrFail($id);
 
         $contact_enquiries = ContactEnquiry::orderBy('created_at', 'desc')->simplePaginate(5);
 
-        return view('admin.blogs.update', compact('blog', 'contact_enquiries'));
+        return view('admin.testimonials.update', compact('testimonial', 'contact_enquiries'));
     }
 
     /**
@@ -98,50 +98,51 @@ class BlogController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        // Find the Blog model by ID
-        $blog = Blog::findOrFail($id);
+        // Find the Testimonial model by ID
+        $testimonial = Testimonial::findOrFail($id);
 
         // Validation rules for the form fields
         $validatedData = $request->validate([
+            'name' => ['required', 'string', 'max:255'],
             'title' => ['required', 'string', 'max:255'],
             'image' => ['nullable', 'image', 'mimes:jpeg,png,jpg,gif', 'max:2048'],
-            'content' => ['required', 'string'],
+            'message' => ['required', 'string'],
         ]);
 
         // Add checkbox values to $validatedData (1 or 0)
         $validatedData['featured'] = $request->has('featured');
 
         // Update the Blog attributes
-        $blog->update($validatedData);
+        $testimonial->update($validatedData);
 
         // Handle image upload
         if ($request->hasFile('image')) {
 
             $image = $request->file('image');
             $imageName = time() . '_' . $image->getClientOriginalName();
-            $imagePath = 'uploads/blogs/' . $imageName;
+            $imagePath = 'uploads/testimonials/' . $imageName;
 
             // Move the uploaded image to the public directory
-            $image->move(public_path('uploads/blogs'), $imageName);
+            $image->move(public_path('uploads/testimonials'), $imageName);
 
             // Save the new image name to the database
-            $blog->image = $imagePath;
-            $blog->save();
+            $testimonial->image = $imagePath;
+            $testimonial->save();
 
         }else{
-            $blog->save();
+            $testimonial->save();
         }
 
-        return redirect()->route('admin.blog.index')->with('update-success', 'Blog updated successfully');
+        return redirect()->route('admin.testimonials.index')->with('update-success', 'Testimonial updated successfully');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Blog $blog)
+    public function destroy(Testimonial $testimonial)
     {
         try{
-            $blog->delete();
+            $testimonial->delete();
             return response(['status' => 'success', 'message' => __('Deleted Successfully!')]);
 
         } catch (\Throwable $th) {

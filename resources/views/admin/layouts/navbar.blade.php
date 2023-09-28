@@ -21,7 +21,7 @@
                         <p>No message found.</p>
                     @else
                         @foreach ($contact_enquiries as $contact_enquiry)
-                            <a href="{{ route('admin.post-enquiry.index') }}" class="dropdown-item dropdown-item-unread">
+                            <a href="{{ route('admin.contact-enquiry.index') }}" class="dropdown-item dropdown-item-unread">
                                 <div class="dropdown-item-avatar">
                                     <img alt="image" src="assets/img/avatar/avatar-1.png" class="rounded-circle">
                                     <div class="is-online"></div>
@@ -40,7 +40,7 @@
 
                 </div>
                 <div class="dropdown-footer text-center">
-                    <a href="{{ route('admin.post-enquiry.index') }}">View All <i class="fas fa-chevron-right"></i></a>
+                    <a href="{{ route('admin.contact-enquiry.index') }}">View All <i class="fas fa-chevron-right"></i></a>
                 </div>
             </div>
         </li>
@@ -54,11 +54,6 @@
                 <a href="{{ route('admin.profile.index') }}" class="dropdown-item has-icon">
                     <i class="far fa-user"></i> Profile
                 </a>
-
-                <a href="{{ route('admin.setting.index') }}" class="dropdown-item has-icon">
-                    <i class="fas fa-cog"></i> Settings
-                </a>
-
 
                 <div class="dropdown-divider"></div>
 

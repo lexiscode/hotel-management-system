@@ -17,6 +17,8 @@ class Admin
     public function handle(Request $request, Closure $next): Response
     {
         if(!Auth::guard('admin')->check())
+
+            // if admin is not logged in, redirect them to login page
             return redirect()->route('admin.login.index')->with('error', 'Please login first.');
 
         return $next($request);

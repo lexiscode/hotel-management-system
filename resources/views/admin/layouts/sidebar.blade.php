@@ -24,7 +24,7 @@
 
             <li class="menu-header">Notifications</li>
 
-            <li class="{{ setSidebarActive(['admin.contact-enquiry.*']) }}"><a class="nav-link" href="{{ route('admin.post-enquiry.index') }}"><i class="fas fa-envelope"></i> <span>Messages</span></a></li>
+            <li class="{{ setSidebarActive(['admin.contact-enquiry.*']) }}"><a class="nav-link" href="{{ route('admin.contact-enquiry.index') }}"><i class="fas fa-envelope"></i> <span>Messages</span></a></li>
 
 
             <li class="menu-header">Navigation Menu</li>
@@ -32,11 +32,13 @@
             <li class="{{ setSidebarActive(['admin.blog.*']) }}"><a class="nav-link" href="{{ route('admin.blog.index') }}"><i class="fab fa-blogger"></i> <span>Blogs</span></a></li>
 
 
+            <li class="menu-header">Testimonials</li>
 
-            <li class="menu-header">Manage Site Settings</li>
+            <li class="{{ setSidebarActive(['admin.testimonial.*']) }}"><a class="nav-link" href="{{ route('admin.testimonial.index') }}"><i class="fab fa-blogger"></i> <span>Testimonials</span></a></li>
 
-            <li class="{{ setSidebarActive(['admin.setting.*']) }}"><a class="nav-link" href="{{ route('admin.setting.index') }}"><i class="fas fa-cog"></i> <span>Settings</span></a></li>
+            <li class="menu-header">Newsletters</li>
 
+            <li class="{{ setSidebarActive(['admin.newsletter.*']) }}"><a class="nav-link" href="{{ route('admin.newsletter.index') }}"><i class="fab fa-blogger"></i> <span>Newsletter</span></a></li>
 
         </ul>
 

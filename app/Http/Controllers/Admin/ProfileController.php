@@ -21,9 +21,9 @@ class ProfileController extends Controller
     {
         $user = Auth::guard('admin')->user(); // gets specific admin user login information
 
-        $post_enquiries = ContactEnquiry::orderBy('created_at', 'desc')->simplePaginate(5);
+        $contact_enquiries = ContactEnquiry::orderBy('created_at', 'desc')->simplePaginate(5);
 
-        return view('admin.profile.index', compact('post_enquiries', 'user'));
+        return view('admin.profile.index', compact('contact_enquiries', 'user'));
     }
 
 

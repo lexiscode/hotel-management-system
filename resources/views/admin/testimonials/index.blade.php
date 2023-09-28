@@ -1,16 +1,16 @@
 @extends('admin.layouts.master')
 
-@section('index-blogs')
+@section('index-testimonials')
     <section class="section">
 
         <div class="section-header">
-            <h1>Manage Blogs</h1>
+            <h1>Manage Testimonials</h1>
         </div>
 
         <div class="card card-warning">
             <div class="card-header">
-                <h4>Manage Your Blogs Here!</h4>
-                <form class="card-header-form" action="{{ route('admin.blog.search') }}" method="GET">
+                <h4>Manage Your Testimonials Here!</h4>
+                <form class="card-header-form" action="{{ route('admin.testimonial.search') }}" method="GET">
                     <div class="input-group">
                         <input type="text" name="search" class="form-control" placeholder="Search">
                         <div class="input-group-btn">
@@ -19,7 +19,7 @@
 
                         <!-- This is the create new blog button -->
                         <div class="card-header-action">
-                            <a href="{{ route('admin.blog.create') }}" class="btn btn-primary">Create New Blog Post</a>
+                            <a href="{{ route('admin.testimonial.create') }}" class="btn btn-primary">Create New Testimonial</a>
                         </div>
 
                     </div>
@@ -54,35 +54,35 @@
                 <table class="table">
                     <thead>
                         <tr>
+                            <th scope="col">Name</th>
                             <th scope="col">Title</th>
                             <th scope="col">Posted On</th>
-                            <th scope="col">Updated On</th>
                             <th scope="col">
                                 <div style="text-align: center;">Actions</div>
                             </th>
                         </tr>
                     </thead>
                     <tbody>
-                        @if ($blogs->isEmpty())
-                            <p>No blog found.</p>
+                        @if ($testimonials->isEmpty())
+                            <p>No testimonial found.</p>
                         @else
-                            @foreach ($blogs as $blog)
+                            @foreach ($testimonials as $testimonial)
                                 <tr>
-                                    <td>{{ $blog->title }}</td>
-                                    <td>{{ $blog->created_at }}</td>
-                                    <td>{{ $blog->updated_at }}</td>
+                                    <td>{{ $testimonial->name }}</td>
+                                    <td>{{ $testimonial->title }}</td>
+                                    <td>{{ $testimonial->created_at }}</td>
                                     <td>
                                         <div style="text-align: center;">
 
-                                            <a href="{{ route('admin.blog.show', $blog->id) }}"
+                                            <a href="{{ route('admin.testimonial.show', $testimonial->id) }}"
                                                 class="btn btn-primary" id="exampleModal"><i class="fas fa-eye"></i></a>
 
-                                            <a href="{{ route('admin.blog.edit', $blog->id) }}"
+                                            <a href="{{ route('admin.testimonial.edit', $testimonial->id) }}"
                                                 class="btn btn-primary btn-action mr-1" data-original-title="Edit">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
 
-                                            <a href="{{ route('admin.blog.destroy', $blog->id) }}" class="btn btn-danger delete-item">
+                                            <a href="{{ route('admin.testimonial.destroy', $testimonial->id) }}" class="btn btn-danger delete-item">
                                                 <i class="fas fa-trash"></i>
                                             </a>
 
@@ -97,7 +97,7 @@
 
                 <!-- Simple pagination links -->
                 <div class="pagination" style="margin: 0 auto; justify-content: center; margin-top: 10px;">
-                    {{ $blogs->links('pagination::simple-bootstrap-4') }}
+                    {{ $testimonials->links('pagination::simple-bootstrap-4') }}
                 </div>
 
             </div>

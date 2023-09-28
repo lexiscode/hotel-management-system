@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Fables">
     <meta name="author" content="Enterprise Development">
-    <link rel="shortcut icon" href={{ asset("assets/custom/images/shortcut.png") }}>
+    <link rel="shortcut icon" href={{ asset("assets/custom/images/shortcut.png") }} type="image/png">
 
     <title> LEXJOE </title>
+   
 
     <!-- animate.css-->
     <link href={{ asset("assets/vendor/animate.css-master/animate.min.css") }} rel="stylesheet">
