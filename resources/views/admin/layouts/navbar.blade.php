@@ -17,21 +17,21 @@
 
                 <div class="dropdown-list-content dropdown-list-message">
 
-                    @if ($post_enquiries->isEmpty())
+                    @if ($contact_enquiries->isEmpty())
                         <p>No message found.</p>
                     @else
-                        @foreach ($post_enquiries as $post_enquiry)
+                        @foreach ($contact_enquiries as $contact_enquiry)
                             <a href="{{ route('admin.post-enquiry.index') }}" class="dropdown-item dropdown-item-unread">
                                 <div class="dropdown-item-avatar">
                                     <img alt="image" src="assets/img/avatar/avatar-1.png" class="rounded-circle">
                                     <div class="is-online"></div>
                                 </div>
                                 <div class="dropdown-item-desc">
-                                    <b>{{ $post_enquiry->name }}</b>
-                                    <p>{{ $post_enquiry->message }}</p>
+                                    <b>{{ $contact_enquiry->name }}</b>
+                                    <p>{{ $contact_enquiry->message }}</p>
                                     <div class="time">
                                         <!--using Laravel's inbuilt Carbon library-->
-                                        {{ $post_enquiry->created_at->diffForHumans() }}
+                                        {{ $contact_enquiry->created_at->diffForHumans() }}
                                     </div>
                                 </div>
                             </a>
@@ -55,11 +55,10 @@
                     <i class="far fa-user"></i> Profile
                 </a>
 
-                @if (hasPermission(['setting index', 'general-seo-setting update']))
                 <a href="{{ route('admin.setting.index') }}" class="dropdown-item has-icon">
                     <i class="fas fa-cog"></i> Settings
                 </a>
-                @endif
+
 
                 <div class="dropdown-divider"></div>
 

@@ -5,8 +5,8 @@
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
   <meta name="csrf-token" content="{{ csrf_token() }}" />
 
-  <title>Admin Dashboard &mdash; {{ $settings['site_name'] }}</title>
-  <link rel="icon" href="{{ asset($settings['site_favicon']) }}" type="image/png">
+  <title>Admin Dashboard &mdash; LexJoe</title>
+  <link rel="icon" href="{{ asset('assets/custom/images/signin-logo.png') }}" type="image/png">
 
   <!-- General CSS Files -->
   <link rel="stylesheet" href="{{ asset('admin/assets/modules/bootstrap/css/bootstrap.min.css') }}">
@@ -54,13 +54,6 @@
         <!-- Admin Settings section -->
         @yield('index-admin-settings')
 
-        <!-- Properties section -->
-        @yield('index-properties')
-        @yield('create-properties')
-        @yield('show-property-details')
-        @yield('update-properties')
-        @yield('search-properties')
-
         <!-- Blogs section -->
         @yield('index-blogs')
         @yield('create-blogs')
@@ -69,37 +62,6 @@
 
         <!-- Messages section -->
         @yield('post_enquiries')
-
-        <!-- About Us section -->
-        @yield('about')
-
-        <!-- Agents section -->
-        @yield('index-agents')
-        @yield('create-agents')
-        @yield('show-agent-details')
-        @yield('update-agents')
-        @yield('search-agents')
-
-        <!-- Remittance section -->
-        @yield('index-remittances')
-        @yield('create-remittances')
-        @yield('show-remittances')
-        @yield('update-remittances')
-        @yield('search-remittances')
-
-        <!-- Tenant section-->
-        @yield('index-tenant-records')
-        @yield('create-tenant-records')
-
-        <!-- Roles and Permissions section-->
-        @yield('index-roles')
-        @yield('create-roles')
-        @yield('update-roles')
-
-        <!-- Role Users Management-->
-        @yield('index-role-users')
-        @yield('create-role-users')
-        @yield('update-role-users')
 
 
         </div>
