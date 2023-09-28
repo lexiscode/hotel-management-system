@@ -52,6 +52,8 @@
     @yield('login')
     @yield('register')
     @yield('admin-login')
+    @yield('reset-password')
+    @yield('forgot-password')
 
     <!-- Footer -->
     @include('web.frontend.layouts.footer')
