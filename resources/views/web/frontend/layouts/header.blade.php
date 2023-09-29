@@ -76,7 +76,7 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#fablesNavDropdown" aria-controls="fablesNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
-                        <span class="fables-iconmenu-icon text-white font-16"></span>
+                        <i class="fas fa-bars" style="color: #f7f7f8;"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="fablesNavDropdown">
 
