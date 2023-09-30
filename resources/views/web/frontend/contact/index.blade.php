@@ -2,89 +2,138 @@
 
 @section('contact')
 
-<!-- Start Header -->
-<div class="fables-header fables-after-overlay">
-    <div class="container">
-         <h2 class="fables-page-title fables-second-border-color">Contact 1</h2>
-    </div>
-</div>
-<!-- /End Header -->
-
-<!-- Start Breadcrumbs -->
-<div class="fables-light-background-color">
-    <div class="container">
-        <nav aria-label="breadcrumb">
-          <ol class="fables-breadcrumb breadcrumb px-0 py-3">
-            <li class="breadcrumb-item"><a href="#" class="fables-second-text-color">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Contact 1</li>
-          </ol>
-        </nav>
-    </div>
-</div>
-<!-- /End Breadcrumbs -->
-
-<!-- Start page content -->
-    <div class="container">
-            <div class="row overflow-hidden">
-                <div class="col-12 col-md-10 offset-md-1 mt-5">
-                    <div class="row">
-                        <div class="col-12 col-sm-6 col-md-4 text-center mb-5 mb-md-0 wow fadeInDown" data-wow-delay=".5s">
-                            <span class="fables-iconmap-icon fa-3x fables-main-text-color fables-second-hover-color"></span>
-                            <h2 class="font-16 semi-font fables-main-text-color my-3">Address Information</h2>
-                            <p class="font-14 fables-forth-text-color">
-                            level13, 2Elizabeth St, Melbourne,Victor 2000</p>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4 text-center mb-5 mb-md-0 wow fadeInDown" data-wow-delay=".8s">
-                            <span class="fables-iconphone fa-3x fables-main-text-color fables-second-hover-color"></span>
-                            <h2 class="font-16 semi-font fables-main-text-color my-3">Mail & Phone number</h2>
-                            <p class="font-14 fables-forth-text-color">adminsupport@website.com</p>
-                            <p class="font-14 fables-forth-text-color">+333 111 111 000</p>
-
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4 text-center mb-5 mb-md-0 wow fadeInDown" data-wow-delay="1.1s">
-                            <span class="fables-iconshare-icon fa-3x fables-main-text-color fables-second-hover-color"></span>
-                            <h2 class="font-16 semi-font fables-main-text-color my-3">Stay In Touch</h2>
-                            <ul class="nav fables-contact-social-links">
-                                <li><a href="#" target="_blank"><i class="fab fa-facebook-f fables-forth-text-color fa-fw"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fab fa-instagram fables-forth-text-color  fa-fw"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fab fa-twitter fables-forth-text-color    fa-fw"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fab fa-linkedin fables-forth-text-color   fa-fw"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="mt-0 mb-5 my-md-5">
-                        <h3 class="font-35 font-weight-bold fables-main-text-color text-center">Contact Us</h3>
-                        <p class="mt-3 fables-forth-text-color  text-center">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal </p>
-
-                    </div>
-
-
-                </div>
-            </div>
-
-        <div class="row mb-4 mb-md-5 overflow-hidden">
-                <div class="col-12 col-sm-6 wow fadeInLeft">
-                    <form class="fables-contact-form">
-                      <div class="form-group">
-                        <input type="text" class="form-control rounded-0 p-3"  placeholder="Name">
-                      </div>
-                      <div class="form-group">
-                        <input type="email" class="form-control rounded-0 p-3" placeholder="Email">
-                      </div>
-                      <div class="form-group">
-                        <input type="text" class="form-control rounded-0 p-3" placeholder="Subject">
-                      </div>
-                      <div class="form-group">
-                          <textarea class="form-control rounded-0 p-3" placeholder="Message" rows="3"></textarea>
-                      </div>
-                      <button type="submit" class="btn fables-second-background-color rounded-0 text-white btn-block p-3">Send</button>
-                    </form>
-                </div>
-                <div class="col-12 col-sm-6 wow fadeInRight">
-                    <div id="map" data-lng="31.248848" data-lat="29.966324" data-icon="{{ asset('assets/custom/images/map-marker.png') }}" data-zom="12" style="width:100%;height:420px"></div>
-                </div>
+<!-- Page Header Start -->
+<div class="container-fluid page-header mb-5 p-0" style="background-image: url(img/carousel-1.jpg);">
+    <div class="container-fluid page-header-inner py-5">
+        <div class="container text-center pb-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Contact</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center text-uppercase">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
+                </ol>
+            </nav>
         </div>
     </div>
-<!-- /End page content -->
+</div>
+<!-- Page Header End -->
+
+
+<!-- Booking Start -->
+<div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="bg-white shadow" style="padding: 35px;">
+            <div class="row g-2">
+                <div class="col-md-10">
+                    <div class="row g-2">
+                        <div class="col-md-3">
+                            <div class="date" id="date1" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input"
+                                    placeholder="Check in" data-target="#date1" data-toggle="datetimepicker" />
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="date" id="date2" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input" placeholder="Check out" data-target="#date2" data-toggle="datetimepicker"/>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <select class="form-select">
+                                <option selected>Adult</option>
+                                <option value="1">Adult 1</option>
+                                <option value="2">Adult 2</option>
+                                <option value="3">Adult 3</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <select class="form-select">
+                                <option selected>Child</option>
+                                <option value="1">Child 1</option>
+                                <option value="2">Child 2</option>
+                                <option value="3">Child 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary w-100">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Booking End -->
+
+
+<!-- Contact Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title text-center text-primary text-uppercase">Contact Us</h6>
+            <h1 class="mb-5"><span class="text-primary text-uppercase">Contact</span> For Any Query</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-12">
+                <div class="row gy-4">
+                    <div class="col-md-4">
+                        <h6 class="section-title text-start text-primary text-uppercase">Booking</h6>
+                        <p><i class="fa fa-envelope-open text-primary me-2"></i>book@example.com</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h6 class="section-title text-start text-primary text-uppercase">General</h6>
+                        <p><i class="fa fa-envelope-open text-primary me-2"></i>info@example.com</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h6 class="section-title text-start text-primary text-uppercase">Technical</h6>
+                        <p><i class="fa fa-envelope-open text-primary me-2"></i>tech@example.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
+                <iframe class="position-relative rounded w-100 h-100"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                    frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+            <div class="col-md-6">
+                <div class="wow fadeInUp" data-wow-delay="0.2s">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact End -->
 
 @endsection

@@ -1,138 +1,59 @@
-<div class="search-section">
-    <a class="close-search" href="#"></a>
-    <div class="d-flex justify-content-center align-items-center h-100">
-        <form method="post" action="#" class="w-50">
-            <div class="row">
-                <div class="col-10">
-                    <input type="search" value="" class="form-control palce bg-transparent border-0 search-input"
-                        placeholder="Search Here ..." />
-                </div>
-                <div class="col-2 mt-3">
-                    <button type="submit" class="btn bg-transparent text-white">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-            </div>
-        </form>
-    </div>
-
-</div>
-
-
-<!-- Loading Screen -->
-<div id="ju-loading-screen">
-    <div class="sk-double-bounce">
-        <div class="sk-child sk-double-bounce1"></div>
-        <div class="sk-child sk-double-bounce2"></div>
-    </div>
-</div>
-
-<!-- Start Top Header -->
-<div class="fables-forth-background-color fables-top-header-signin">
-    <div class="container">
-        <div class="row" id="top-row">
-            <div class="col-12 col-sm-2 col-lg-5">
-                <div class="dropdown">
-                    <button
-                        class="btn btn-secondary dropdown-toggle border-0 bg-transparent font-13 lang-dropdown-btn pl-0"
-                        type="button" id="dropdownLangButton" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        language
-                    </button>
-                    <div class="dropdown-menu p-0 fables-forth-background-color rounded-0 m-0 border-0 lang-dropdown"
-                        aria-labelledby="dropdownLangButton">
-                        <a class="dropdown-item white-color font-13 fables-second-hover-color" href="#">
-                            <img src="assets/custom/images/england.png" alt="england flag" class="mr-1"> English</a>
-                        <a class="dropdown-item white-color font-13 fables-second-hover-color" href="#">
-                            <img src="assets/custom/images/France.png" alt="england flag" class="mr-1"> French</a>
+<!-- Header Start -->
+<div class="container-fluid bg-dark px-0">
+    <div class="row gx-0">
+        <div class="col-lg-3 bg-dark d-none d-lg-block">
+            <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                <h1 class="m-0 text-primary text-uppercase">Hotelier</h1>
+            </a>
+        </div>
+        <div class="col-lg-9">
+            <div class="row gx-0 bg-white d-none d-lg-flex">
+                <div class="col-lg-7 px-5 text-start">
+                    <div class="h-100 d-inline-flex align-items-center py-2 me-4">
+                        <i class="fa fa-envelope text-primary me-2"></i>
+                        <p class="mb-0">info@example.com</p>
+                    </div>
+                    <div class="h-100 d-inline-flex align-items-center py-2">
+                        <i class="fa fa-phone-alt text-primary me-2"></i>
+                        <p class="mb-0">+012 345 6789</p>
                     </div>
                 </div>
-
+                <div class="col-lg-5 px-5 text-end">
+                    <div class="d-inline-flex align-items-center py-2">
+                        <a class="me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="me-3" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="me-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="me-3" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="" href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-sm-5 col-lg-4 text-right">
-                <p class="fables-third-text-color font-13"><span class="fables-iconphone"></span> Phone : (888) 6000
-                    6000 - (888) 6000 6000</p>
-            </div>
-            <div class="col-12 col-sm-5 col-lg-3 text-right">
-                <p class="fables-third-text-color font-13"><span class="fables-iconemail"></span> Email:
-                    Design@domain.com</p>
-            </div>
-
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
+                <a href="index.html" class="navbar-brand d-block d-lg-none">
+                    <h1 class="m-0 text-primary text-uppercase">Hotelier</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav mr-auto py-0">
+                        <a href="{{ route('web.home') }}" class="nav-item nav-link active">Home</a>
+                        <a href="{{ route('web.about') }}" class="nav-item nav-link">About</a>
+                        <a href="{{ route('web.services') }}" class="nav-item nav-link">Services</a>
+                        <a href="{{ route('web.rooms') }}" class="nav-item nav-link">Rooms</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="{{ route('web.booking') }}" class="dropdown-item">Booking</a>
+                                <a href="{{ route('web.our-team') }}" class="dropdown-item">Our Team</a>
+                            </div>
+                        </div>
+                        <a href="{{ route('web.contact') }}" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="https://htmlcodex.com/hotel-html-template-pro" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Premium Version<i class="fa fa-arrow-right ms-3"></i></a>
+                </div>
+            </nav>
         </div>
     </div>
 </div>
-
-<!-- /End Top Header -->
-
-<!-- Start Fables Navigation -->
-<div class="fables-navigation fables-main-background-color py-3 py-lg-0">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-10 col-lg-9 pr-md-0">
-                <nav class="navbar navbar-expand-md btco-hover-menu py-lg-2">
-
-                    <a class="navbar-brand pl-0" href="{{ url('/') }}"><img src="{{ asset('assets/custom/images/fables-logo.png') }}"
-                            alt="Fables Template" class="fables-logo"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#fablesNavDropdown" aria-controls="fablesNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <i class="fas fa-bars" style="color: #f7f7f8;"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="fablesNavDropdown">
-
-                        <ul class="navbar-nav mx-auto fables-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/') }}" id="sub-nav2" aria-haspopup="true" aria-expanded="false">
-                                    Home
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('web.about') }}" id="sub-nav3" aria-haspopup="true" aria-expanded="false">
-                                    About Us
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('web.testimonials') }}" id="sub-nav5" aria-haspopup="true" aria-expanded="false">
-                                    Testimonials
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('web.blog') }}" id="sub-nav5" aria-haspopup="true" aria-expanded="false">
-                                    Blog
-                                </a>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="{{ route('web.contact') }}" id="sub-nav7" aria-haspopup="true" aria-expanded="false">
-                                    Contact Us
-                                </a>
-                            </li>
-                        </ul>
-
-                    </div>
-                </nav>
-            </div>
-
-
-
-            <div class="col-12 col-md-2 col-lg-3 pr-md-0 icons-header-mobile">
-                <div class="fables-header-icons">
-                    <a href="#"
-                        class="open-search fables-third-text-color right  top-header-link px-3 px-md-2 px-lg-4 fables-second-hover-color max-line-height">
-                        <span class="fas fa-search" style="color: #fafafa;"></span>
-                    </a>
-                    <a href="{{ route('web.login') }}"
-                        class="fables-third-text-color fables-second-hover-color font-13 top-header-link px-3 px-md-2 px-lg-4 max-line-height">
-                        <span class="fas fa-user" style="color: #fcfcfd;"></span>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<!-- Navigation -->
+<!-- Header End -->

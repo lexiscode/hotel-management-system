@@ -1,83 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Fables">
-    <meta name="author" content="Enterprise Development">
-    <link rel="shortcut icon" href={{ asset("assets/custom/images/shortcut.png") }} type="image/png">
+    <title>Hotelier</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-    <title> LEXJOE </title>
-   
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-    <!-- animate.css-->
-    <link href={{ asset("assets/vendor/animate.css-master/animate.min.css") }} rel="stylesheet">
-    <!-- Load Screen -->
-    <link href={{ asset("assets/vendor/loadscreen/css/spinkit.css") }} rel="stylesheet">
-    <!-- GOOGLE FONT -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <!-- Font Awesome 5 -->
-    <link href={{ asset("assets/vendor/fontawesome/css/fontawesome-all.min.css") }} rel="stylesheet">
-    <!-- Fables Icons -->
-    <link href={{ asset("assets/custom/css/fables-icons.css") }}rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link href={{ asset("assets/vendor/bootstrap/css/bootstrap.min.css") }} rel="stylesheet">
-    <link href={{ asset("assets/vendor/bootstrap/css/bootstrap-4-navbar.css") }} rel="stylesheet">
-    <!-- portfolio filter gallery -->
-    <link href={{ asset("assets/vendor/portfolio-filter-gallery/portfolio-filter-gallery.css") }} rel="stylesheet">
-    <!-- FANCY BOX -->
-    <link href={{ asset("assets/vendor/fancybox-master/jquery.fancybox.min.css") }} rel="stylesheet">
-    <!-- RANGE SLIDER -->
-    <link href={{ asset("assets/vendor/range-slider/range-slider.css") }} rel="stylesheet">
-    <!-- OWL CAROUSEL  -->
-    <link href={{ asset("assets/vendor/owlcarousel/owl.carousel.min.css") }} rel="stylesheet">
-    <link href={{ asset("assets/vendor/owlcarousel/owl.theme.default.min.css") }} rel="stylesheet">
-    <!-- FABLES CUSTOM CSS FILE -->
-    <link href={{ asset("assets/custom/css/custom.css") }} rel="stylesheet">
-    <!-- FABLES CUSTOM CSS RESPONSIVE FILE -->
-    <link href={{ asset("assets/custom/css/custom-responsive.css") }} rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{{ asset('assets/lib/animate/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css') }}" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
 </head>
+
 <body>
+    <div class="container-xxl bg-white p-0">
 
-    <!-- Navigation Header -->
-    @include('web.frontend.layouts.header')
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
 
-    @yield('about')
-    @yield('contact')
-    @yield('blog')
-    @yield('404')
-    @yield('blog-details')
-    @yield('testimonials')
-    @yield('hotels-list')
-    @yield('login')
-    @yield('register')
-    @yield('admin-login')
-    @yield('reset-password')
-    @yield('forgot-password')
+        <!-- Header -->
+        @include('web.frontend.layouts.header')
 
-    <!-- Footer -->
-    @include('web.frontend.layouts.footer')
+        @yield('homepage')
+        @yield('about')
+        @yield('service')
+        @yield('room')
+        @yield('booking')
+        @yield('our-team')
+        @yield('contact')
 
-    <script src={{ asset("assets/vendor/jquery/jquery-3.3.1.min.js") }}></script>
-    <script src={{ asset("assets/vendor/loadscreen/js/ju-loading-screen.js") }}></script>
-    <script src={{ asset("assets/vendor/jquery-circle-progress/circle-progress.min.js") }}></script>
-    <script src={{ asset("assets/vendor/popper/popper.min.js") }}></script>
-    <script src={{ asset("assets/vendor/jQuery.countdown-master/jquery.countdown.min.js") }}></script>
-    <script src={{ asset("assets/vendor/timeline/jquery.timelify.js") }}></script>
-    <script src={{ asset("assets/vendor/bootstrap/js/bootstrap.min.js") }}></script>
-    <script src={{ asset("assets/vendor/bootstrap/js/bootstrap-4-navbar.js") }}></script>
-    <script src={{ asset("assets/vendor/WOW-master/dist/wow.min.js") }}></script>
-    <script src={{ asset("assets/vendor/owlcarousel/owl.carousel.min.js") }}></script>
-    <script src={{ asset("assets/custom/js/jquery-data-to.js") }}></script>
-    <script src={{ asset("assets/vendor/jquery-circle-progress/circle.js") }}></script>
-    <script src={{ asset("assets/vendor/portfolio-filter-gallery/jquery.isotope.min.js") }}></script>
-    <script src={{ asset("assets/vendor/portfolio-filter-gallery/portfolio-filter-gallery.js") }}></script>
-    <script src={{ asset("assets/vendor/fancybox-master/jquery.fancybox.min.js") }}></script>
-    <script src={{ asset("assets/custom/js/custom.js") }}></script>
-    <script src={{ asset("assets/vendor/video-background/jquery.mb.YTPlayer.js") }}></script>
-    <script>$(".player").mb_YTPlayer();</script>
+        <!-- Footer -->
+        @include('web.frontend.layouts.footer')
 
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+
+   <!-- JavaScript Libraries -->
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="{{ asset('assets/lib/wow/wow.min.js') }}"></script>
+   <script src="{{ asset('assets/lib/easing/easing.min.js') }}"></script>
+   <script src="{{ asset('assets/lib/waypoints/waypoints.min.js') }}"></script>
+   <script src="{{ asset('assets/lib/counterup/counterup.min.js') }}"></script>
+   <script src="{{ asset('assets/lib/owlcarousel/owl.carousel.min.js') }}"></script>
+   <script src="{{ asset('assets/lib/tempusdominus/js/moment.min.js') }}"></script>
+   <script src="{{ asset('assets/lib/tempusdominus/js/moment-timezone.min.js') }}"></script>
+   <script src="{{ asset('assets/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js') }}"></script>
+
+   <!-- Template Javascript -->
+   <script src="{{ asset('assets/js/main.js') }}"></script>
 </body>
 
 </html>
