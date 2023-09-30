@@ -53,6 +53,7 @@
         @yield('booking')
         @yield('our-team')
         @yield('contact')
+        @yield('partner-list')
 
         <!-- Footer -->
         @include('web.frontend.layouts.footer')
