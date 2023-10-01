@@ -97,7 +97,7 @@
                         </div>
                         <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                         <div class="d-flex justify-content-between">
-                            <a class="btn btn-sm btn-dark rounded py-2 px-4" href="{{ route('web.adis-hotel', 1) }}">Book Now</a>
+                            <a class="btn btn-sm btn-dark rounded py-2 px-4" href="{{ route('web.adis-hotel', 1) }}">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                         </div>
                         <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                         <div class="d-flex justify-content-between">
-                            <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">Book Now</a>
+                            <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -155,7 +155,7 @@
                         </div>
                         <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                         <div class="d-flex justify-content-between">
-                            <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                            <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -185,7 +185,7 @@
                         </div>
                         <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                         <div class="d-flex justify-content-between">
-                            <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">Book Now</a>
+                            <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -213,7 +213,7 @@
                         </div>
                         <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                         <div class="d-flex justify-content-between">
-                            <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                            <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -243,7 +243,7 @@
                         </div>
                         <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                         <div class="d-flex justify-content-between">
-                            <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">Book Now</a>
+                            <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Details</a>
                         </div>
                     </div>
                 </div>
