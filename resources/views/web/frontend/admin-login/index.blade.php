@@ -2,34 +2,30 @@
 
 @section('admin-login')
 
-<!-- Start Header -->
-<div class="fables-header fables-after-overlay">
-    <div class="container">
-         <h2 class="fables-page-title fables-second-border-color">Admin Login</h2>
+<!-- Page Header Start -->
+<div class="container-fluid page-header mb-5 p-0" style="background-image: url('{{ asset('assets/img/carousel-1.jpg') }}');">
+    <div class="container-fluid page-header-inner py-5">
+        <div class="container text-center pb-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Admin Login</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center text-uppercase">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Admin</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Login</li>
+                </ol>
+            </nav>
+        </div>
     </div>
 </div>
-<!-- /End Header -->
-
-<!-- Start Breadcrumbs -->
-<div class="fables-light-background-color">
-    <div class="container">
-        <nav aria-label="breadcrumb">
-          <ol class="fables-breadcrumb breadcrumb px-0 py-3">
-            <li class="breadcrumb-item"><a href="{{ url('/') }}" class="fables-second-text-color">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Admin Login</li>
-          </ol>
-        </nav>
-    </div>
-</div>
-<!-- /End Breadcrumbs -->
+<!-- Page Header End -->
 
 <!-- Start page content -->
 
 <div class="container">
     <div class="row my-4 my-lg-5">
         <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center">
-            <img src="{{ asset('assets/custom/images/signin-logo.png') }}" alt="signin" class="img-fluid">
-            <p class="font-20 semi-font fables-main-text-color mt-4 mb-4 mb-lg-5">Admin Login Fables</p>
+            <h1 class="m-0 text-primary text-uppercase">Hotelier</h1>
+            <p class="font-20 semi-font fables-main-text-color mt-4 mb-4 mb-lg-5">Administrators Only</p>
 
             <!--Displays "please login first" error on unauthorize admin user-->
             @if (session()->has('error'))
@@ -43,7 +39,6 @@
                     {{ session()->get('success') }}
                 </p>
             @endif
-            <br>
 
             <form method="POST" action="{{ route('admin.login') }}">
                 @csrf

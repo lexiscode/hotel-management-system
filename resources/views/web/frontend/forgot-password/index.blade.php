@@ -2,26 +2,22 @@
 
 @section('forgot-password')
 
-<!-- Start Header -->
-<div class="fables-header fables-after-overlay">
-    <div class="container">
-         <h2 class="fables-page-title fables-second-border-color">Forgot Password</h2>
+<!-- Page Header Start -->
+<div class="container-fluid page-header mb-5 p-0" style="background-image: url('{{ asset('assets/img/carousel-1.jpg') }}');">
+    <div class="container-fluid page-header-inner py-5">
+        <div class="container text-center pb-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Forgot Password</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center text-uppercase">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Admin</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Forgot Password</li>
+                </ol>
+            </nav>
+        </div>
     </div>
 </div>
-<!-- /End Header -->
-
-<!-- Start Breadcrumbs -->
-<div class="fables-light-background-color">
-    <div class="container">
-        <nav aria-label="breadcrumb">
-          <ol class="fables-breadcrumb breadcrumb px-0 py-3">
-            <li class="breadcrumb-item"><a href="{{ url('/') }}" class="fables-second-text-color">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Forgot Password</li>
-          </ol>
-        </nav>
-    </div>
-</div>
-<!-- /End Breadcrumbs -->
+<!-- Page Header End -->
 
 <!-- Start page content -->
 <div class="container">

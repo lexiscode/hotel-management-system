@@ -30,6 +30,10 @@
 
     <!-- Template Stylesheet -->
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+
+    <!-- FABLES CUSTOM CSS FILE FOR LOGIN SECTIONS-->
+    <link href={{ asset("assets/css/custom.css") }} rel="stylesheet">
+
 </head>
 
 <body>
@@ -47,6 +51,9 @@
         @include('web.frontend.layouts.header')
 
         @yield('homepage')
+        @yield('admin-login')
+        @yield('forgot-password')
+        @yield('reset-password')
         @yield('about')
         @yield('service')
         @yield('room')
