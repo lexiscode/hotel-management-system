@@ -12,7 +12,7 @@
                     <div class="p-3" style="max-width: 700px;">
                         <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Luxury Living</h6>
                         <h1 class="display-3 text-white mb-4 animated slideInDown">Discover A Brand Luxurious Hotel</h1>
-                        <a href="{{ route('web.partner-list') }}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Hotels</a>
+                        <a href="{{ route('web.partners-list') }}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Hotels</a>
                         <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a>
                     </div>
                 </div>
@@ -23,7 +23,7 @@
                     <div class="p-3" style="max-width: 700px;">
                         <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Luxury Living</h6>
                         <h1 class="display-3 text-white mb-4 animated slideInDown">Discover A Brand Luxurious Hotel</h1>
-                        <a href="{{ route('web.partner-list') }}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Hotels</a>
+                        <a href="{{ route('web.partners-list') }}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Hotels</a>
                         <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                         </div>
                     </div>
                 </div>
-                <a class="btn btn-primary py-3 px-5 mt-2" href="{{ route('web.partner-list') }}">Explore More</a>
+                <a class="btn btn-primary py-3 px-5 mt-2" href="{{ route('web.partners-list') }}">Explore More</a>
             </div>
             <div class="col-lg-6">
                 <div class="row g-3">

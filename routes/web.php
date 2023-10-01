@@ -13,6 +13,7 @@ use App\Http\Controllers\Web\OurTeamController;
 use App\Http\Controllers\Web\WebLoginController;
 use App\Http\Controllers\Web\WebRegisterController;
 use App\Http\Controllers\Web\PartnerListController;
+use App\Http\Controllers\Web\Partners\AdisHotelController;
 
 
 
@@ -23,11 +24,15 @@ Route::get('contact', [ContactController::class, 'index'])->name('web.contact');
 Route::get('services', [ServiceController::class, 'index'])->name('web.services');
 Route::get('room/{id}', [RoomDetailController::class, 'show'])->name('web.rooms');
 Route::get('rooms', [RoomController::class, 'index'])->name('web.rooms');
-Route::get('partners', [PartnerListController::class, 'index'])->name('web.partner-list');
+Route::get('partners-list', [PartnerListController::class, 'index'])->name('web.partners-list');
 Route::get('booking', [BookingController::class, 'index'])->name('web.booking');
 Route::get('our-team', [OurTeamController::class, 'index'])->name('web.our-team');
+
 Route::get('login', [WebLoginController::class, 'index'])->name('web.login');
 Route::get('register', [WebRegisterController::class, 'index'])->name('web.register');
+
+// Group Routes for each Hotels
+Route::get('partners-list/adis-hotel', [AdisHotelController::class, 'index'])->name('web.adis-hotel');
 
 
 Route::fallback(function () {
