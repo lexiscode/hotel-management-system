@@ -19,53 +19,6 @@
 </div>
 <!-- Page Header End -->
 
-
-<!-- Booking Start -->
-<div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container">
-        <div class="bg-white shadow" style="padding: 35px;">
-            <div class="row g-2">
-                <div class="col-md-10">
-                    <div class="row g-2">
-                        <div class="col-md-3">
-                            <div class="date" id="date1" data-target-input="nearest">
-                                <input type="text" class="form-control datetimepicker-input"
-                                    placeholder="Check in" data-target="#date1" data-toggle="datetimepicker" />
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="date" id="date2" data-target-input="nearest">
-                                <input type="text" class="form-control datetimepicker-input" placeholder="Check out" data-target="#date2" data-toggle="datetimepicker"/>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <select class="form-select">
-                                <option selected>Adult</option>
-                                <option value="1">Adult 1</option>
-                                <option value="2">Adult 2</option>
-                                <option value="3">Adult 3</option>
-                            </select>
-                        </div>
-                        <div class="col-md-3">
-                            <select class="form-select">
-                                <option selected>Child</option>
-                                <option value="1">Child 1</option>
-                                <option value="2">Child 2</option>
-                                <option value="3">Child 3</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <button class="btn btn-primary w-100">Submit</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Booking End -->
-
-
 <!-- About Start -->
 <div class="container-xxl py-5">
     <div class="container">
@@ -74,6 +27,11 @@
                 <h6 class="section-title text-start text-primary text-uppercase">About Us</h6>
                 <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">Hotelex</span></h1>
                 <p class="mb-4">We are a digital solutions company specializing in the development of web applications tailored to address the unique challenges across various industries.</p>
+                <p class="mb-4">We care, we take a personalized approach to each of our partners, and our management team is never more than a phone call or email away.</p>
+                <p class="mb-4"># We seamlessly integrates personalized hotel softwares, making the transition smooth and hassle-free.</p>
+                <p class="mb-4"># We prioritize the security of your data, employing the latest encryption and security protocols to safeguard information.</p>
+                <p class="mb-4"># Benefit from round-the-clock customer support to address any issues promptly and keep your hotel running smoothly.</p>
+                <p class="mb-4"># As your hotel grows, our platform grows with you, accommodating additional properties and expanding services seamlessly.</p>
                 <div class="row g-3 pb-4">
                     <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
                         <div class="border rounded p-1">
@@ -103,7 +61,7 @@
                         </div>
                     </div>
                 </div>
-                <a class="btn btn-primary py-3 px-5 mt-2" href="">Explore More</a>
+                <a class="btn btn-primary py-3 px-5 mt-2" href="{{ route('web.contact') }}">Contact Us</a>
             </div>
             <div class="col-lg-6">
                 <div class="row g-3">
@@ -146,8 +104,8 @@
                         </div>
                     </div>
                     <div class="text-center p-4 mt-3">
-                        <h5 class="fw-bold mb-0">Full Name</h5>
-                        <small>Designation</small>
+                        <h5 class="fw-bold mb-0">Alexander V.</h5>
+                        <small>Chief Executive Officer</small>
                     </div>
                 </div>
             </div>
@@ -162,8 +120,8 @@
                         </div>
                     </div>
                     <div class="text-center p-4 mt-3">
-                        <h5 class="fw-bold mb-0">Full Name</h5>
-                        <small>Designation</small>
+                        <h5 class="fw-bold mb-0">Joseph 0.</h5>
+                        <small>Assistant CEO/Advisor</small>
                     </div>
                 </div>
             </div>
@@ -178,8 +136,8 @@
                         </div>
                     </div>
                     <div class="text-center p-4 mt-3">
-                        <h5 class="fw-bold mb-0">Full Name</h5>
-                        <small>Designation</small>
+                        <h5 class="fw-bold mb-0">Kingsley A.</h5>
+                        <small>Customer Care Rep.</small>
                     </div>
                 </div>
             </div>
@@ -194,8 +152,8 @@
                         </div>
                     </div>
                     <div class="text-center p-4 mt-3">
-                        <h5 class="fw-bold mb-0">Full Name</h5>
-                        <small>Designation</small>
+                        <h5 class="fw-bold mb-0">Precious R.</h5>
+                        <small>Customer Care Rep.</small>
                     </div>
                 </div>
             </div>

@@ -2,27 +2,6 @@
 
 @section('404')
 
-<!-- Start Header -->
-<div class="fables-header fables-after-overlay">
-    <div class="container">
-        <h2 class="fables-page-title fables-second-border-color">404</h2>
-    </div>
-</div>
-<!-- /End Header -->
-
-<!-- Start Breadcrumbs -->
-<div class="fables-light-background-color">
-    <div class="container">
-        <nav aria-label="breadcrumb">
-        <ol class="fables-breadcrumb breadcrumb px-0 py-3">
-            <li class="breadcrumb-item"><a href="{{ url('/') }}" class="fables-second-text-color">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">404</li>
-        </ol>
-        </nav>
-    </div>
-</div>
-<!-- /End Breadcrumbs -->
-
 <!-- Start page content -->
 <div class="container">
     <div class="row">
