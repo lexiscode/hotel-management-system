@@ -61,6 +61,7 @@
         @yield('our-team')
         @yield('contact')
         @yield('partner-list')
+        @yield('404')
 
         <!-- Footer -->
         @include('web.frontend.layouts.footer')

@@ -26,12 +26,11 @@
             <div class="col-lg-6">
                 <h6 class="section-title text-start text-primary text-uppercase">About Us</h6>
                 <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">Hotelex</span></h1>
-                <p class="mb-4">We are a digital solutions company specializing in the development of web applications tailored to address the unique challenges across various industries.</p>
-                <p class="mb-4">We care, we take a personalized approach to each of our partners, and our management team is never more than a phone call or email away.</p>
-                <p class="mb-4"># We seamlessly integrates personalized hotel softwares, making the transition smooth and hassle-free.</p>
-                <p class="mb-4"># We prioritize the security of your data, employing the latest encryption and security protocols to safeguard information.</p>
-                <p class="mb-4"># Benefit from round-the-clock customer support to address any issues promptly and keep your hotel running smoothly.</p>
-                <p class="mb-4"># As your hotel grows, our platform grows with you, accommodating additional properties and expanding services seamlessly.</p>
+                <p class="mb-4">We are a digital solutions company specializing in the development of web applications tailored to address the unique challenges across various industries. At Hotelex, we care, we take a personalized approach to each of our partners, and our management team is never more than a phone call or email away.</p>
+                <p class="mb-4"><i class="far fa-check-circle" style="color: #e9bb16;"></i> We seamlessly integrates personalized hotel softwares, making the transition smooth and hassle-free.</p>
+                <p class="mb-4"><i class="far fa-check-circle" style="color: #e9bb16;"></i> We prioritize the security of your data, employing the latest encryption and security protocols to safeguard information.</p>
+                <p class="mb-4"><i class="far fa-check-circle" style="color: #e9bb16;"></i> Benefit from round-the-clock customer support to address any issues promptly and keep your hotel running smoothly.</p>
+                <p class="mb-4"><i class="far fa-check-circle" style="color: #e9bb16;"></i> As your hotel grows, our platform grows with you, accommodating additional properties and expanding services seamlessly.</p>
                 <div class="row g-3 pb-4">
                     <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
                         <div class="border rounded p-1">

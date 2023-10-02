@@ -13,7 +13,7 @@
                         <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Luxury Living</h6>
                         <h1 class="display-3 text-white mb-4 animated slideInDown">Discover A Brand Luxurious Hotel</h1>
                         <a href="{{ route('web.partners-list') }}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Hotels</a>
-                        <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a>
+                        <a href="{{ route('web.booking') }}" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a>
                     </div>
                 </div>
             </div>
@@ -138,8 +138,8 @@
                         </div>
                         <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                         <div class="d-flex justify-content-between">
-                            <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
-                            <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                            <a class="btn btn-sm btn-primary rounded py-2 px-4" href="#">View Detail</a>
+                            <a class="btn btn-sm btn-dark rounded py-2 px-4" href="{{ route('web.booking') }}">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -169,8 +169,8 @@
                         </div>
                         <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                         <div class="d-flex justify-content-between">
-                            <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
-                            <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                            <a class="btn btn-sm btn-primary rounded py-2 px-4" href="#">View Detail</a>
+                            <a class="btn btn-sm btn-dark rounded py-2 px-4" href="{{ route('web.booking') }}">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -200,8 +200,8 @@
                         </div>
                         <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                         <div class="d-flex justify-content-between">
-                            <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">View Detail</a>
-                            <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">Book Now</a>
+                            <a class="btn btn-sm btn-primary rounded py-2 px-4" href="#">View Detail</a>
+                            <a class="btn btn-sm btn-dark rounded py-2 px-4" href="{{ route('web.booking') }}">Book Now</a>
                         </div>
                     </div>
                 </div>
