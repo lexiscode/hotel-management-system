@@ -72,8 +72,8 @@
         <div class="row g-5 align-items-center">
             <div class="col-lg-6">
                 <h6 class="section-title text-start text-primary text-uppercase">About Us</h6>
-                <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">Hotelier</span></h1>
-                <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">Hotelex</span></h1>
+                <p class="mb-4">We are a digital solutions company specializing in the development of web applications tailored to address the unique challenges across various industries.</p>
                 <div class="row g-3 pb-4">
                     <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
                         <div class="border rounded p-1">

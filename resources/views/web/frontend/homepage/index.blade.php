@@ -96,8 +96,8 @@
         <div class="row g-5 align-items-center">
             <div class="col-lg-6">
                 <h6 class="section-title text-start text-primary text-uppercase">About Us</h6>
-                <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">Hotelier</span></h1>
-                <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                <h1 class="mb-4">Welcome to <span class="text-primary text-uppercase">Hotelex</span></h1>
+                <p class="mb-4">We are a digital solutions company specializing in the development of web applications tailored to address the unique challenges across various industries. At Hotelex, our primary objective is to assist hotels in enhancing their document management systems while fostering strong client relationships. Additionally, we are dedicated to promoting hotels to a broader online audience within the local community.</p>
                 <div class="row g-3 pb-4">
                     <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
                         <div class="border rounded p-1">
@@ -155,10 +155,11 @@
 <div class="container-xxl py-5">
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="section-title text-center text-primary text-uppercase">Our Rooms</h6>
+            <h6 class="section-title text-center text-primary text-uppercase">Our Premium Partners Rooms</h6>
             <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Rooms</span></h1>
         </div>
         <div class="row g-4">
+
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="room-item shadow rounded overflow-hidden">
                     <div class="position-relative">
@@ -189,6 +190,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="room-item shadow rounded overflow-hidden">
                     <div class="position-relative">
@@ -219,6 +221,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
                 <div class="room-item shadow rounded overflow-hidden">
                     <div class="position-relative">
@@ -249,6 +252,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
@@ -262,9 +266,9 @@
             <div class="p-5">
                 <h6 class="section-title text-start text-white text-uppercase mb-3">Luxury Living</h6>
                 <h1 class="text-white mb-4">Discover A Brand Luxurious Hotel</h1>
-                <p class="text-white mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">Our Rooms</a>
-                <a href="" class="btn btn-light py-md-3 px-md-5">Book A Room</a>
+                <p class="text-white mb-4">"Staying in a hotel offers the opportunity to relax, rejuvenate, and enjoy a hassle-free experience, with comfort and convenience at the forefront of your stay."</p>
+                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3">View Hotels</a>
+                <a href="" class="btn btn-light py-md-3 px-md-5">Contact Us</a>
             </div>
         </div>
         <div class="col-md-6">
@@ -302,7 +306,7 @@
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
             <h6 class="section-title text-center text-primary text-uppercase">Our Services</h6>
-            <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Services</span></h1>
+            <h1 id="all-services" class="mb-5">Explore Our <span class="text-primary text-uppercase">Services</span></h1>
         </div>
         <div class="row g-4">
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -312,8 +316,8 @@
                             <i class="fa fa-hotel fa-2x text-primary"></i>
                         </div>
                     </div>
-                    <h5 class="mb-3">Rooms & Appartment</h5>
-                    <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                    <h5 class="mb-3">Operational Efficiency</h5>
+                    <p class="text-body mb-0">We help streamline the check-in and check-out processes, making them more efficient and reducing the time guests spend at the front desk.</p>
                 </a>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
@@ -323,8 +327,8 @@
                             <i class="fa fa-utensils fa-2x text-primary"></i>
                         </div>
                     </div>
-                    <h5 class="mb-3">Food & Restaurant</h5>
-                    <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                    <h5 class="mb-3">Promotions & Marketing</h5>
+                    <p class="text-body mb-0">The system can store guest information for future marketing efforts. It enables the hotel to build and maintain customer profiles and target past guests with promotions and loyalty programs.</p>
                 </a>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -334,8 +338,8 @@
                             <i class="fa fa-spa fa-2x text-primary"></i>
                         </div>
                     </div>
-                    <h5 class="mb-3">Spa & Fitness</h5>
-                    <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                    <h5 class="mb-3">Security & Data Access</h5>
+                    <p class="text-body mb-0">A legally authorized personnel can access and retrieve guests data with ease in response to regulatory requirements or legal investigations.</p>
                 </a>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
@@ -345,8 +349,8 @@
                             <i class="fa fa-swimmer fa-2x text-primary"></i>
                         </div>
                     </div>
-                    <h5 class="mb-3">Sports & Gaming</h5>
-                    <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                    <h5 class="mb-3">Analytics & Reporting</h5>
+                    <p class="text-body mb-0">The data collected can be used for analysis and reporting. Hotels can gain insights into occupancy rates, revenue trends, and helping with strategic decision-making.</p>
                 </a>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -356,8 +360,8 @@
                             <i class="fa fa-glass-cheers fa-2x text-primary"></i>
                         </div>
                     </div>
-                    <h5 class="mb-3">Event & Party</h5>
-                    <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                    <h5 class="mb-3">Improved Bookings</h5>
+                    <p class="text-body mb-0">Our user-friendly booking process and responsive design improves hotels data management, increase conversion rates, maximizing revenue potential.</p>
                 </a>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
@@ -367,8 +371,8 @@
                             <i class="fa fa-dumbbell fa-2x text-primary"></i>
                         </div>
                     </div>
-                    <h5 class="mb-3">GYM & Yoga</h5>
-                    <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                    <h5 class="mb-3">Effective Housekeeping</h5>
+                    <p class="text-body mb-0">Knowing which rooms are occupied and when guests are checking out helps housekeeping staff plan their work efficiently and maintain rooms in a timely manner.</p>
                 </a>
             </div>
         </div>
@@ -424,7 +428,7 @@
 <div class="container-xxl py-5">
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="section-title text-center text-primary text-uppercase">Our Team</h6>
+            <h6 class="section-title text-center text-primary text-uppercase">Our Core Team</h6>
             <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Staffs</span></h1>
         </div>
         <div class="row g-4">
@@ -439,8 +443,8 @@
                         </div>
                     </div>
                     <div class="text-center p-4 mt-3">
-                        <h5 class="fw-bold mb-0">Full Name</h5>
-                        <small>Designation</small>
+                        <h5 class="fw-bold mb-0">Alexander V.</h5>
+                        <small>Chief Executive Officer</small>
                     </div>
                 </div>
             </div>
@@ -455,8 +459,8 @@
                         </div>
                     </div>
                     <div class="text-center p-4 mt-3">
-                        <h5 class="fw-bold mb-0">Full Name</h5>
-                        <small>Designation</small>
+                        <h5 class="fw-bold mb-0">Joseph 0.</h5>
+                        <small>Assistant CEO/Advisor</small>
                     </div>
                 </div>
             </div>
@@ -471,8 +475,8 @@
                         </div>
                     </div>
                     <div class="text-center p-4 mt-3">
-                        <h5 class="fw-bold mb-0">Full Name</h5>
-                        <small>Designation</small>
+                        <h5 class="fw-bold mb-0">Kingsley A.</h5>
+                        <small>Marketing Officer</small>
                     </div>
                 </div>
             </div>
@@ -487,8 +491,8 @@
                         </div>
                     </div>
                     <div class="text-center p-4 mt-3">
-                        <h5 class="fw-bold mb-0">Full Name</h5>
-                        <small>Designation</small>
+                        <h5 class="fw-bold mb-0">Precious R.</h5>
+                        <small>Customer Care Rep.</small>
                     </div>
                 </div>
             </div>

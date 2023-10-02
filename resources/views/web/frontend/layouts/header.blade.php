@@ -3,19 +3,19 @@
     <div class="row gx-0">
         <div class="col-lg-3 bg-dark d-none d-lg-block">
             <a href="{{ url('/') }}" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                <h1 class="m-0 text-primary text-uppercase">Hotelier</h1>
+                <h1 class="m-0 text-primary text-uppercase">Hotelex</h1>
             </a>
         </div>
         <div class="col-lg-9">
             <div class="row gx-0 bg-white d-none d-lg-flex">
                 <div class="col-lg-7 px-5 text-start">
                     <div class="h-100 d-inline-flex align-items-center py-2 me-4">
-                        <i class="fa fa-envelope text-primary me-2"></i>
-                        <p class="mb-0">info@example.com</p>
+                        <a href="mailto:hotelex@hotmail.com"><i class="fa fa-envelope text-primary me-2"></i></a>
+                        <p class="mb-0">hotelex@hotmail.com</p>
                     </div>
                     <div class="h-100 d-inline-flex align-items-center py-2">
-                        <i class="fa fa-phone-alt text-primary me-2"></i>
-                        <p class="mb-0">+012 345 6789</p>
+                        <a href="tel:+2349021801802"><i class="fa fa-phone-alt text-primary me-2"></i></a>
+                        <p class="mb-0">+234 902 180 1802</p>
                     </div>
                 </div>
                 <div class="col-lg-5 px-5 text-end">
