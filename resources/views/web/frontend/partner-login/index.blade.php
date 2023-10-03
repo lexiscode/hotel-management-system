@@ -1,16 +1,16 @@
 @extends('web.frontend.layouts.master')
 
-@section('admin-login')
+@section('partner-login')
 
 <!-- Page Header Start -->
 <div class="container-fluid page-header mb-5 p-0" style="background-image: url('{{ asset('assets/img/carousel-1.jpg') }}');">
     <div class="container-fluid page-header-inner py-5">
         <div class="container text-center pb-5">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">Admin Login</h1>
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Partners Login</h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center text-uppercase">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Admin</a></li>
+                    <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Partners</a></li>
                     <li class="breadcrumb-item text-white active" aria-current="page">Login</li>
                 </ol>
             </nav>
@@ -25,7 +25,7 @@
     <div class="row my-4 my-lg-5">
         <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center">
             <h1 class="m-0 text-primary text-uppercase">Hotelex</h1>
-            <p class="font-20 semi-font fables-main-text-color mt-4 mb-4 mb-lg-5">Administrators Only</p>
+            <p class="font-20 semi-font fables-main-text-color mt-4 mb-4 mb-lg-5">Our Partners Only</p>
 
             <!--Displays "please login first" error on unauthorize admin user-->
             @if (session()->has('error'))
@@ -40,7 +40,7 @@
                 </p>
             @endif
 
-            <form method="POST" action="{{ route('admin.login') }}">
+            <form method="POST" action="{{ route('partner.login') }}">
                 @csrf
                 <div class="form-group">
                     <div class="input-icon">

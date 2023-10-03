@@ -52,6 +52,7 @@
 
         @yield('homepage')
         @yield('admin-login')
+        @yield('partner-login')
         @yield('forgot-password')
         @yield('reset-password')
         @yield('about')

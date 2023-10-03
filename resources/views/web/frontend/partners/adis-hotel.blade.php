@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>Hotelier</title>
+      <title>Hotelex</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -66,7 +66,7 @@
                                  <a class="nav-link" href="#contact">Contact us</a>
                               </li>
                            </ul>
-                           <div class="sign_btn"><a href="#">Sign in</a></div>
+                           <div class="sign_btn"><a href="{{ route('partner.login.index') }}">Sign in</a></div>
                         </div>
                      </nav>
                   </div>
@@ -320,19 +320,19 @@
                      <form id="request" class="main_form">
                         <div class="row">
                            <div class="col-md-12 ">
-                              <input class="contactus" placeholder="Full Name" type="type" name="Full Name">
+                              <input class="contactus" placeholder="Full Name" type="text" name="name">
                            </div>
                            <div class="col-md-12">
-                              <input class="contactus" placeholder="Email" type="type" name="Email">
+                              <input class="contactus" placeholder="Email" type="email" name="email">
                            </div>
                            <div class="col-md-12">
-                              <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">
+                              <input class="contactus" placeholder="Phone Number" type="number" name="number">
                            </div>
                            <div class="col-md-12">
-                              <textarea class="textarea" placeholder="Message" type="type" Message="Name">Message </textarea>
+                              <textarea class="textarea" placeholder="Message" type="type" name="message">Message</textarea>
                            </div>
                            <div class="col-sm-12">
-                              <button class="send_btn">Send</button>
+                              <button type='submit' class="send_btn">Send</button>
                            </div>
                         </div>
                      </form>
