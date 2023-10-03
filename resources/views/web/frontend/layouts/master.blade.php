@@ -51,10 +51,14 @@
         @include('web.frontend.layouts.header')
 
         @yield('homepage')
+
         @yield('admin-login')
         @yield('partner-login')
         @yield('forgot-password')
         @yield('reset-password')
+        @yield('partner-forgot-password')
+        @yield('partner-reset-password')
+
         @yield('about')
         @yield('service')
         @yield('room')

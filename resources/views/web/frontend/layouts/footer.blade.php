@@ -69,7 +69,6 @@
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                     &copy; <a class="border-bottom" href="{{ url('/') }}">Hotelex</a>, All Right Reserved.
-                    Templated By HTML Codex
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <div class="footer-menu">

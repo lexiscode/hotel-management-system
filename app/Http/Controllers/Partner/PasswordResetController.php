@@ -20,7 +20,7 @@ class PasswordResetController extends Controller
      */
     public function create(): View
     {
-        return view('web.frontend.forgot-password.index');
+        return view('web.frontend.partner-forgot-password.index');
     }
 
 
@@ -44,7 +44,7 @@ class PasswordResetController extends Controller
         // Retrieve the email from the query string in the browser
         $email = request('email');
 
-        return view('web.frontend.reset-password.index', compact('email', 'token'));
+        return view('web.frontend.partner-reset-password.index', compact('email', 'token'));
     }
 
 

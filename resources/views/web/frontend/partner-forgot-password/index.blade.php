@@ -1,6 +1,6 @@
 @extends('web.frontend.layouts.master')
 
-@section('forgot-password')
+@section('partner-forgot-password')
 
 <!-- Page Header Start -->
 <div class="container-fluid page-header mb-5 p-0" style="background-image: url('{{ asset('assets/img/carousel-1.jpg') }}');">
@@ -10,7 +10,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center text-uppercase">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Admin</a></li>
+                    <li class="breadcrumb-item"><a href="#">Partner</a></li>
                     <li class="breadcrumb-item text-white active" aria-current="page">Forgot Password</li>
                 </ol>
             </nav>
@@ -35,7 +35,7 @@
                 <br>
             @endif
 
-            <form method="POST" action="{{ route('admin.forgot-password.send') }}">
+            <form method="POST" action="{{ route('partner.forgot-password.send') }}">
             @csrf
                 <div class="form-group">
                     <div class="input-icon">

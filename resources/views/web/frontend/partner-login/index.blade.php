@@ -57,7 +57,7 @@
 
                 </div>
                 <button type="submit" class="btn btn-block rounded-0 white-color fables-main-hover-background-color fables-second-background-color font-16 semi-font py-3">Sign in</button>
-                <a href="{{ route('admin.forgot-password') }}" class="fables-forth-text-color font-16 fables-second-hover-color underline mt-3 mb-4 m-lg-5 d-block">Forgot Password ?</a>
+                <a href="{{ route('partner.forgot-password') }}" class="fables-forth-text-color font-16 fables-second-hover-color underline mt-3 mb-4 m-lg-5 d-block">Forgot Password ?</a>
             </form>
 
          </div>
