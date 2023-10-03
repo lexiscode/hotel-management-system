@@ -51,12 +51,11 @@
         <!-- Admin Profile section -->
         @yield('index-profile')
 
-        <!-- Blogs section -->
-        @yield('index-blogs')
-        @yield('create-blogs')
-        @yield('show-blog-details')
-        @yield('update-blogs')
-        @yield('search-blogs')
+        <!-- Partners section -->
+        @yield('index-partners')
+        @yield('create-partners')
+        @yield('update-partners')
+        @yield('search-partners')
 
         <!-- Messages section -->
         @yield('contact_enquiries')
@@ -71,7 +70,7 @@
         <!-- Newsletter section -->
         @yield('index-newsletter')
         @yield('search-newsletter')
-       
+
 
 
         </div>

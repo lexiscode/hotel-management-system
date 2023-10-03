@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\PasswordResetController;
 
-use App\Http\Controllers\Admin\BlogController;
+use App\Http\Controllers\Admin\ManagePartnerController;
 use App\Http\Controllers\Admin\TestimonialController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ContactEnquiryController;
@@ -42,7 +42,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware'=> ['admin']], 
     Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
 
     // This route is for the BlogController
-    Route::resource('blog', BlogController::class);
+    Route::resource('manage-partner', ManagePartnerController::class);
 
     // This route is for the TestimonialController
     Route::resource('testimonial', TestimonialController::class);
@@ -54,7 +54,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware'=> ['admin']], 
     Route::resource('newsletter', NewsletterController::class);
 
     // This route is for the search functionality in the Blogs admin page
-    Route::get('search-blog', [SearchBlogController::class, 'search'])->name('blog.search');
+    Route::get('search-partner', [SearchPartnerController::class, 'search'])->name('partner.search');
     // This route is for the search functionality in the Testimonials admin page
     Route::get('search-testimonial', [SearchTestimonialController::class, 'search'])->name('testimonial.search');
     // This route is for the search functionality in the Newsletter admin page
