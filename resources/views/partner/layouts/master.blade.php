@@ -5,7 +5,7 @@
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
   <meta name="csrf-token" content="{{ csrf_token() }}" />
 
-  <title>Admin Dashboard &mdash; LexJoe</title>
+  <title>Admin Dashboard &mdash; Hotelex</title>
   <link rel="shortcut icon" href={{ asset("assets/custom/images/shortcut.png") }} type="image/png">
 
   <!-- General CSS Files -->
@@ -52,21 +52,19 @@
         @yield('index-profile')
 
         <!-- Blogs section -->
-        @yield('index-blogs')
-        @yield('create-blogs')
-        @yield('show-blog-details')
-        @yield('update-blogs')
-        @yield('search-blogs')
+        @yield('index-manage-bookings')
+        @yield('create-manage-bookings')
+        @yield('show-manage-booking-details')
+        @yield('update-manage-bookings')
+        @yield('search-manage-booking')
 
         <!-- Messages section -->
         @yield('contact_enquiries')
 
-
-
         </div>
         <footer class="main-footer">
             <div class="footer-left">
-            Copyright &copy; 2023 <div class="bullet"></div> Designed By <a href="https://nauval.in/">Nwokorie Alexander V.</a>
+            Copyright &copy; 2023 <div class="bullet"></div> Designed By Alexander V.</a>
             </div>
             <div class="footer-right">
 

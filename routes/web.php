@@ -14,6 +14,7 @@ use App\Http\Controllers\Web\WebLoginController;
 use App\Http\Controllers\Web\WebRegisterController;
 use App\Http\Controllers\Web\PartnerListController;
 use App\Http\Controllers\Web\Partners\AdisHotelController;
+use App\Http\Controllers\Web\Partners\CarltonHotelController;
 
 
 
@@ -33,6 +34,7 @@ Route::get('register', [WebRegisterController::class, 'index'])->name('web.regis
 
 // Group Routes for each Hotels
 Route::get('partners-list/adis-hotel', [AdisHotelController::class, 'index'])->name('web.adis-hotel');
+Route::get('partners-list/carlton-hotel', [CarltonHotelController::class, 'index'])->name('web.carlton-hotel');
 
 
 Route::fallback(function () {

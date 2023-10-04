@@ -2,13 +2,19 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Partner;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class PartnerContactEnquiry extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'email', 'number', 'message'];
+    protected $fillable = ['partner_id', 'name', 'email', 'number', 'message'];
+
+    public function partner()
+    {
+        return $this->belongsTo(Partner::class);
+    }
 
 }

@@ -87,7 +87,7 @@
                     </thead>
                     <tbody>
                         @if ($partners->isEmpty())
-                            <p>No users found.</p>
+                            <p>No partner found.</p>
                         @else
                             @foreach ($partners as $partner)
                                 <tr class="text-center">
@@ -116,7 +116,7 @@
                 </table>
                 <!-- Simple pagination links -->
                 <div class="pagination" style="margin: 0 auto; justify-content: center; margin-top: 10px;">
-                    {{ $admins->links('pagination::simple-bootstrap-4') }}
+                    {{ $partners->links('pagination::simple-bootstrap-4') }}
                 </div>
 
             </div>

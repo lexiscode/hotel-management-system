@@ -4,11 +4,11 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Partner\PartnerController;
 use App\Http\Controllers\Partner\PasswordResetController;
 
-use App\Http\Controllers\Partner\BlogController;
+use App\Http\Controllers\Partner\ManageBookingController;
 use App\Http\Controllers\Partner\DashboardController;
 use App\Http\Controllers\Partner\ContactEnquiryController;
 use App\Http\Controllers\Partner\ProfileController;
-use App\Http\Controllers\Partner\SearchBlogController;
+use App\Http\Controllers\Partner\SearchBookingController;
 use App\Http\Controllers\Partner\TestimonialController;
 use App\Http\Controllers\Partner\SearchTestimonialController;
 
@@ -39,18 +39,12 @@ Route::group(['prefix' => 'partner', 'as' => 'partner.', 'middleware'=> ['partne
     Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
 
     // This route is for the BlogController
-    Route::resource('blog', BlogController::class);
-
-    // This route is for the TestimonialController
-    Route::resource('testimonial', TestimonialController::class);
+    Route::resource('manage-booking', ManageBookingController::class);
 
     // This route is for the PostEnquireController
-    Route::resource('contact-enquiry', PartnerContactEnquiryController::class);
+    Route::resource('contact-enquiry', ContactEnquiryController::class);
 
-
-    // This route is for the search functionality in the Blogs admin page
-    Route::get('search-blog', [SearchBlogController::class, 'search'])->name('blog.search');
-    // This route is for the search functionality in the Testimonials admin page
-    Route::get('search-testimonial', [SearchTestimonialController::class, 'search'])->name('testimonial.search');
+    // This route is for the search functionality in the Bookings admin page
+    Route::get('search-booking', [SearchBookingController::class, 'search'])->name('booking.search');
 
 });

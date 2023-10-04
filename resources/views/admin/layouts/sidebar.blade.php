@@ -29,7 +29,7 @@
 
             <li class="menu-header">Navigation Menu</li>
 
-            <li class="{{ setSidebarActive(['admin.blog.*']) }}"><a class="nav-link" href="{{ route('admin.blog.index') }}"><i class="fab fa-blogger"></i> <span>Blogs</span></a></li>
+            <li class="{{ setSidebarActive(['admin.manage-partner.*']) }}"><a class="nav-link" href="{{ route('admin.manage-partner.index') }}"><i class="fab fa-blogger"></i> <span>Manage Partners</span></a></li>
 
 
             <li class="menu-header">Testimonials</li>

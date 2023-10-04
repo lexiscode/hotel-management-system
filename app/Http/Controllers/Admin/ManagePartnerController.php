@@ -50,9 +50,6 @@ class ManagePartnerController extends Controller
             $user->password = bcrypt($request->password);
             $user->save();
 
-            // assigns the role to user
-            $user->assignRole($request->role);
-
             /** send mail to the new role user */
             Mail::to($request->email)->send(new ManagePartnerCreateMail($request->email, $request->password));
 

@@ -50,7 +50,7 @@
                             <div class="center-desk">
                                 <div class="logo">
                                     {{-- <a href="index.html"><img src="{{ asset('partners/adis-hotel/images/logo.png') }}" alt="#" /></a> --}}
-                                    <a href="index.html">ADIS</a>
+                                    <a href="index.html">CARLTON</a>
                                 </div>
                             </div>
                         </div>
@@ -88,7 +88,7 @@
                 <div class="col-md-12">
                     <div class="text-bg">
                         <div class="padding_lert">
-                            <h1>WELCOME TO ADIS HOTEL </h1>
+                            <h1>WELCOME TO CARLTON HOTEL </h1>
                             <span>LANDING PAGE 2023</span>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have
                                 suffered alteration in some form, by injected humour, or randomised words which don't
@@ -101,7 +101,7 @@
         </div>
     </section>
     <!-- end banner -->
- 
+
     <!-- choose  section -->
     <div class="choose">
         <div class="container">

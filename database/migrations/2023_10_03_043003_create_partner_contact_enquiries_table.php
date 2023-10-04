@@ -13,11 +13,14 @@ return new class extends Migration
     {
         Schema::create('partner_contact_enquiries', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('partner_id');
             $table->string('name');
             $table->string('email');
             $table->string('number');
             $table->text('message');
             $table->timestamps();
+
+            $table->foreign('partner_id')->references('id')->on('partners');
         });
     }
 

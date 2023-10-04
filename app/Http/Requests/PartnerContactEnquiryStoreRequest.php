@@ -2,10 +2,9 @@
 
 namespace App\Http\Requests;
 
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Foundation\Http\FormRequest;
 
-class AdminProfileUpdateRequest extends FormRequest
+class PartnerContactEnquiryStoreRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -18,13 +17,15 @@ class AdminProfileUpdateRequest extends FormRequest
     /**
      * Get the validation rules that apply to the request.
      *
-     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array|string>
+     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
      */
     public function rules(): array
     {
         return [
-            'name' => ['required', 'max:255'],
-            'email' => ['required', 'max:255', 'email', 'unique:admins,email,'.Auth::guard('admin')->user()->id]
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'max:255'],
+            'phone_number' => ['required', 'string', 'max:20'],
+            'message' => ['required', 'string'],
         ];
     }
 }

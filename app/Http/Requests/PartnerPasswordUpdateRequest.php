@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Foundation\Http\FormRequest;
 
-class AdminPasswordUpdateRequest extends FormRequest
+class PartnerPasswordUpdateRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -32,7 +32,7 @@ class AdminPasswordUpdateRequest extends FormRequest
     public function withValidator($validator): void
     {
         $validator->after(function($validator){
-            if(!Hash::check($this->current_password, Auth::guard('admin')->user()->password)){
+            if(!Hash::check($this->current_password, Auth::guard('partner')->user()->password)){
                 $validator->errors()->add('current_password', __('old password doesn\'t match'));
             }
         });
