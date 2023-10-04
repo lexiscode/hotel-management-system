@@ -38,7 +38,7 @@
                                     <p class='text-danger'>{{ $message }}</p>
                                 @enderror
                             </div>
-                            <div class="form-group col-md-5">
+                            <div class="form-group col-md-4">
                                 <label for="check-out">Check-out</label>
                                 <input type="datetime-local" name="check_out" required class="form-control" id="check-out">
                                 <div class="invalid-feedback">
@@ -48,7 +48,7 @@
                                     <p class='text-danger'>{{ $message }}</p>
                                 @enderror
                             </div>
-                            <div class="form-group col-md-3">
+                            <div class="form-group col-md-4">
                                 <label for="room-name">Room Name</label>
                                 <input type="text" name="room_name" required class="form-control" id="room-name">
                                 <div class="invalid-feedback">
@@ -71,9 +71,9 @@
                                     <p class='text-danger'>{{ $message }}</p>
                                 @enderror
                             </div>
-                            <div class="form-group col-md-5">
+                            <div class="form-group col-md-4">
                                 <label for="adults">Number of Adults</label>
-                                <input type="number" name="adults" crequired lass="form-control" id="adults">
+                                <input type="number" name="adults" required class="form-control" id="adults">
                                 <div class="invalid-feedback">
                                     Please input the number of adults
                                 </div>
@@ -81,18 +81,17 @@
                                     <p class='text-danger'>{{ $message }}</p>
                                 @enderror
                             </div>
-                            <div class="form-group col-md-3">
-                                <div class="form-group col-md-5">
-                                    <label for="children">Number of Children</label>
-                                    <input type="number" name="children" required class="form-control" id="children">
-                                    <div class="invalid-feedback">
-                                        Please input the number of children
-                                    </div>
-                                    @error('children')
-                                        <p class='text-danger'>{{ $message }}</p>
-                                    @enderror
+                            <div class="form-group col-md-4">
+                                <label for="children">Number of Children</label>
+                                <input type="number" name="children" required class="form-control" id="children">
+                                <div class="invalid-feedback">
+                                    Please input the number of children
                                 </div>
+                                @error('children')
+                                    <p class='text-danger'>{{ $message }}</p>
+                                @enderror
                             </div>
+
                         </div>
 
                         <div class="form-row">
@@ -106,7 +105,7 @@
                                     <p class='text-danger'>{{ $message }}</p>
                                 @enderror
                             </div>
-                            <div class="form-group col-md-5">
+                            <div class="form-group col-md-4">
                                 <label for="guest-name">Guest Full Name</label>
                                 <input type="text" name="guest_name" required class="form-control" id="guest-name">
                                 <div class="invalid-feedback">
@@ -116,29 +115,27 @@
                                     <p class='text-danger'>{{ $message }}</p>
                                 @enderror
                             </div>
-                            <div class="form-group col-md-3">
-                                <div class="form-group col-md-5">
-                                    <label for="phone-number">Phone Number</label>
-                                    <input type="number" name="phone_number" required class="form-control" id="phone-number">
-                                    <div class="invalid-feedback">
-                                        Please input the guest phone number
-                                    </div>
-                                    @error('phone_number')
-                                        <p class='text-danger'>{{ $message }}</p>
-                                    @enderror
+                            <div class="form-group col-md-4">
+                                <label for="phone-number">Phone Number</label>
+                                <input type="number" name="phone_number" required class="form-control" id="phone-number">
+                                <div class="invalid-feedback">
+                                    Please input the guest phone number
                                 </div>
+                                @error('phone_number')
+                                    <p class='text-danger'>{{ $message }}</p>
+                                @enderror
                             </div>
                         </div>
 
                         <div class="form-row">
-                            <div class="form-group col-md-4">
+                            <div class="form-group col-md-3">
                                 <label for="inputStatus">Status</label>
                                 <select class="form-control form-control-sm" name="status" required>
                                     <option>Checked-in</option>
                                     <option>Checked-out</option>
                                 </select>
                             </div>
-                            <div class="form-group col-md-5">
+                            <div class="form-group col-md-4">
                                 <label for="email">Email (Optional)</label>
                                 <input type="email" name="email" class="form-control" id="email">
                                 <div class="invalid-feedback">
@@ -148,7 +145,7 @@
                                     <p class='text-danger'>{{ $message }}</p>
                                 @enderror
                             </div>
-                            <div class="form-group col-md-3">
+                            <div class="form-group col-md-5">
                                 <label for="notes">Extra Notes (Optional)</label>
                                 <textarea class="form-control" name="notes" id="notes"></textarea>
                                 <div class="invalid-feedback">
@@ -159,11 +156,10 @@
                                 @enderror
                             </div>
                         </div>
+
                     </div>
-
-
                     <div class="card-footer">
-                        <button type="submit" class="btn btn-primary">Book Now!</button>
+                        <button type="submit" class="btn btn-success">BOOK NOW!</button>
                     </div>
                 </form>
             </div>
