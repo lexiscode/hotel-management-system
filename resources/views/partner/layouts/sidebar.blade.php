@@ -28,7 +28,7 @@
 
             <li class="menu-header">Manage Bookings Record</li>
             <li class="{{ setSidebarActive(['partner.manage-booking.*']) }}"><a class="nav-link" href="{{ route('partner.manage-booking.index') }}"><i class="fab fa-blogger"></i><span>Manage Bookings</span></a></li>
-            <li class="{{ setSidebarActive(['partner.manage-booking.*']) }}"><a class="nav-link" href="{{ route('partner.statement.index') }}"><i class="fab fa-blogger"></i><span>Statements</span></a></li>
+            <li class="{{ setSidebarActive(['partner.generate-statement.*']) }}"><a class="nav-link" href="{{ route('partner.generate-statement.index') }}"><i class="fab fa-blogger"></i><span>Generate Statements</span></a></li>
         </ul>
 
     </aside>

@@ -61,6 +61,10 @@
         <!-- Messages section -->
         @yield('contact_enquiries')
 
+        <!-- Generate Statements section-->
+        @yield('index-generate-statements')
+        @yield('create-generate-statements')
+
         </div>
         <footer class="main-footer">
             <div class="footer-left">

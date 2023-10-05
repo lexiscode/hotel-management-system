@@ -9,6 +9,8 @@ use App\Http\Controllers\Partner\DashboardController;
 use App\Http\Controllers\Partner\ContactEnquiryController;
 use App\Http\Controllers\Partner\ProfileController;
 use App\Http\Controllers\Partner\SearchBookingController;
+use App\Http\Controllers\Partner\GenerateStatementController;
+
 
 
 Route::group(['prefix' => 'partner', 'as' => 'partner.'], function(){
@@ -41,6 +43,11 @@ Route::group(['prefix' => 'partner', 'as' => 'partner.', 'middleware'=> ['partne
 
     // This route is for the PostEnquireController
     Route::resource('contact-enquiry', ContactEnquiryController::class);
+
+    // Thess routes are for the TenantRecordController
+    Route::get('generate-statement', [GenerateStatementController::class, 'index'])->name('generate-statement.index');
+    Route::get('generate-statement/create', [GenerateStatementController::class, 'create'])->name('generate-statement.create');
+    Route::get('generate-statement/generate-pdf', [GenerateStatementController::class, 'generatePDF'])->name('generate-statement.generate-pdf');
 
     // This route is for the search functionality in the Bookings admin page
     Route::get('search-booking', [SearchBookingController::class, 'search'])->name('booking.search');
