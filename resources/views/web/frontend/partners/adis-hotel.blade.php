@@ -14,15 +14,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="{{ asset('partners/adis-hotel/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('partners/css/bootstrap.min.css') }}">
     <!-- style css -->
-    <link rel="stylesheet" href="{{ asset('partners/adis-hotel/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('partners/css/style.css') }}">
     <!-- Responsive-->
-    <link rel="stylesheet" href="{{ asset('partners/adis-hotel/css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ asset('partners/css/responsive.css') }}">
     <!-- fevicon -->
-    <link rel="icon" href="{{ asset('partners/adis-hotel/images/fevicon.png') }}" type="image/gif" />
+    <link rel="icon" href="{{ asset('partners/images/fevicon.png') }}" type="image/gif" />
     <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('partners/adis-hotel/css/jquery.mCustomScrollbar.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('partners/css/jquery.mCustomScrollbar.min.css') }}">
     <!-- Tweaks for older IEs-->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
@@ -36,7 +36,7 @@
 <body class="main-layout">
     <!-- loader  -->
     <div class="loader_bg">
-        <div class="loader"><img src="{{ asset('partners/adis-hotel/images/loading.gif') }}" alt="#" /></div>
+        <div class="loader"><img src="{{ asset('partners/images/loading.gif') }}" alt="#" /></div>
     </div>
     <!-- end loader -->
     <!-- header -->
@@ -123,19 +123,19 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="img_box">
-                                <figure><img src="{{ asset('partners/adis-hotel/images/img1.jpg') }}"
+                                <figure><img src="{{ asset('partners/images/img1.jpg') }}"
                                         alt="#" /></figure>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="img_box">
-                                <figure><img src="{{ asset('partners/adis-hotel/images/img2.jpg') }}"
+                                <figure><img src="{{ asset('partners/images/img2.jpg') }}"
                                         alt="#" /></figure>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="img_box">
-                                <figure><img src="{{ asset('partners/adis-hotel/images/img3.jpg') }}"
+                                <figure><img src="{{ asset('partners/images/img3.jpg') }}"
                                         alt="#" /></figure>
                             </div>
                         </div>
@@ -151,7 +151,7 @@
             <div class="row d_flex">
                 <div class="col-md-6">
                     <div class="img_box">
-                        <figure><img src="{{ asset('partners/adis-hotel/images/img4.jpg') }}" alt="#" />
+                        <figure><img src="{{ asset('partners/images/img4.jpg') }}" alt="#" />
                         </figure>
                     </div>
                 </div>
@@ -190,7 +190,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="about_img">
-                        <figure><img src="{{ asset('partners/adis-hotel/images/about_img.jpg') }}" alt="#" />
+                        <figure><img src="{{ asset('partners/images/about_img.jpg') }}" alt="#" />
                         </figure>
                     </div>
                 </div>
@@ -224,7 +224,7 @@
                                             <div class="col-md-6 margin_boot">
                                                 <div class="test_box">
                                                     <h4>Mark jonson</h4>
-                                                    <i><img src="{{ asset('partners/adis-hotel/images/te1.png') }}"
+                                                    <i><img src="{{ asset('partners/images/te1.png') }}"
                                                             alt="#" /></i>
                                                     <p>There are many variations of passages of Lorem Ipsum available,
                                                         but the majority have suffered alteration in some form, by
@@ -234,7 +234,7 @@
                                             <div class="col-md-6">
                                                 <div class="test_box">
                                                     <h4>Mac Du</h4>
-                                                    <i><img src="{{ asset('partners/adis-hotel/images/te1.png') }}"
+                                                    <i><img src="{{ asset('partners/images/te1.png') }}"
                                                             alt="#" /></i>
                                                     <p>There are many variations of passages of Lorem Ipsum available,
                                                         but the majority have suffered alteration in some form, by
@@ -252,7 +252,7 @@
                                             <div class="col-md-6 margin_boot">
                                                 <div class="test_box">
                                                     <h4>Mark jonson</h4>
-                                                    <i><img src="{{ asset('partners/adis-hotel/images/te1.png') }}"
+                                                    <i><img src="{{ asset('partners/images/te1.png') }}"
                                                             alt="#" /></i>
                                                     <p>There are many variations of passages of Lorem Ipsum available,
                                                         but the majority have suffered alteration in some form, by
@@ -262,7 +262,7 @@
                                             <div class="col-md-6">
                                                 <div class="test_box">
                                                     <h4>Mac Du</h4>
-                                                    <i><img src="{{ asset('partners/adis-hotel/images/te1.png') }}"
+                                                    <i><img src="{{ asset('partners/images/te1.png') }}"
                                                             alt="#" /></i>
                                                     <p>There are many variations of passages of Lorem Ipsum available,
                                                         but the majority have suffered alteration in some form, by
@@ -280,7 +280,7 @@
                                             <div class="col-md-6 margin_boot">
                                                 <div class="test_box">
                                                     <h4>Mark jonson</h4>
-                                                    <i><img src="{{ asset('partners/adis-hotel/images/te1.png') }}"
+                                                    <i><img src="{{ asset('partners/images/te1.png') }}"
                                                             alt="#" /></i>
                                                     <p>There are many variations of passages of Lorem Ipsum available,
                                                         but the majority have suffered alteration in some form, by
@@ -290,7 +290,7 @@
                                             <div class="col-md-6">
                                                 <div class="test_box">
                                                     <h4>Mac Du</h4>
-                                                    <i><img src="{{ asset('partners/adis-hotel/images/te1.png') }}"
+                                                    <i><img src="{{ asset('partners/images/te1.png') }}"
                                                             alt="#" /></i>
                                                     <p>There are many variations of passages of Lorem Ipsum available,
                                                         but the majority have suffered alteration in some form, by
@@ -385,14 +385,14 @@
     </footer>
     <!-- end footer -->
     <!-- Javascript files-->
-    <script src="{{ asset('partners/adis-hotel/js/jquery.min.js') }}"></script>
-    <script src="{{ asset('partners/adis-hotel/js/popper.min.js') }}"></script>
-    <script src="{{ asset('partners/adis-hotel/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('partners/adis-hotel/js/jquery-3.0.0.min.js') }}"></script>
-    <script src="{{ asset('partners/adis-hotel/js/plugin.js') }}"></script>
+    <script src="{{ asset('partners/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('partners/js/popper.min.js') }}"></script>
+    <script src="{{ asset('partners/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('partners/js/jquery-3.0.0.min.js') }}"></script>
+    <script src="{{ asset('partners/js/plugin.js') }}"></script>
     <!-- sidebar -->
-    <script src="{{ asset('partners/adis-hotel/js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
-    <script src="{{ asset('partners/adis-hotel/js/custom.js') }}"></script>
+    <script src="{{ asset('partners/js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+    <script src="{{ asset('partners/js/custom.js') }}"></script>
     <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 </body>
 
