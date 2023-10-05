@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const selectedStatus = statusFilter.value;
 
         tableRows.forEach(function (row) {
-            const rowStatus = row.querySelector(".payment-status").textContent.trim(); // Get the payment status text
+            const rowStatus = row.querySelector(".check-status").textContent.trim(); // Get the check status text
             if (selectedStatus === "All" || selectedStatus === rowStatus) {
                 row.style.display = ""; // Show the row
             } else {

@@ -9,8 +9,6 @@ use App\Http\Controllers\Partner\DashboardController;
 use App\Http\Controllers\Partner\ContactEnquiryController;
 use App\Http\Controllers\Partner\ProfileController;
 use App\Http\Controllers\Partner\SearchBookingController;
-use App\Http\Controllers\Partner\TestimonialController;
-use App\Http\Controllers\Partner\SearchTestimonialController;
 
 
 Route::group(['prefix' => 'partner', 'as' => 'partner.'], function(){

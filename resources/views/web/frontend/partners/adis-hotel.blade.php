@@ -101,7 +101,7 @@
         </div>
     </section>
     <!-- end banner -->
- 
+
     <!-- choose  section -->
     <div class="choose">
         <div class="container">
@@ -114,8 +114,9 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit </p>
-                        <a class="read_more" href="#">See More</a>
+                            voluptate velit
+                        </p>
+
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -162,8 +163,9 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit </p>
-                        <a class="read_more" href="#">Read More</a>
+                            voluptate velit
+                        </p>
+
                     </div>
                 </div>
             </div>
@@ -181,7 +183,8 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit </p>
+                                reprehenderit in voluptate velit
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -323,7 +326,7 @@
                             <h2>Contact Us</h2>
                         </div>
                         <div class="cont">
-                            <h3>Free download Landing page Felicity Hotel </h3>
+                            <h3>We would get back to you in no time!</h3>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have
                                 suffered alteration in some form, by injected humour,</p>
                         </div>

@@ -50,6 +50,16 @@
                     </div>
                 @endif
 
+                <!-- The filter field -->
+                <div class="mb-3">
+                    <label for="statusFilter" class="form-label">Filter by Status:</label>
+                    <select class="form-control" id="statusFilter">
+                        <option value="All">All</option>
+                        <option value="Check-In">Check-In</option>
+                        <option value="Check-Out">Check-Out</option>
+                    </select>
+                </div>
+
                 <!-- This is a simple table -->
                 <table class="table">
                     <thead>
@@ -72,7 +82,7 @@
                                     <td>{{ $booking->room_name }}</td>
                                     <td>{{ $booking->room_number }}</td>
                                     <td>{{ $booking->guest_name }}</td>
-                                    <td>
+                                    <td class="check-status">
                                         @if ($booking->status === 'Checked-in')
                                             <div class="badge badge-success">{{ $booking->status }}</div>
                                         @elseif ($booking->status === 'Checked-out')

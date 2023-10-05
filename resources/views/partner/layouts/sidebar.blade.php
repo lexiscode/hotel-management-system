@@ -26,9 +26,9 @@
             <li class="{{ setSidebarActive(['partner.contact-enquiry.*']) }}"><a class="nav-link" href="{{ route('partner.contact-enquiry.index') }}"><i class="fas fa-envelope"></i> <span>Messages</span></a></li>
 
 
-            <li class="menu-header">Manage Bookings</li>
+            <li class="menu-header">Manage Bookings Record</li>
             <li class="{{ setSidebarActive(['partner.manage-booking.*']) }}"><a class="nav-link" href="{{ route('partner.manage-booking.index') }}"><i class="fab fa-blogger"></i><span>Manage Bookings</span></a></li>
-
+            <li class="{{ setSidebarActive(['partner.manage-booking.*']) }}"><a class="nav-link" href="{{ route('partner.statement.index') }}"><i class="fab fa-blogger"></i><span>Statements</span></a></li>
         </ul>
 
     </aside>
